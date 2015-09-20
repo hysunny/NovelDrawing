@@ -1,0 +1,145 @@
+<!-- 
+    Copyright (c) 2011 Microsoft Corporation.  All rights reserved.
+    Use of this sample source code is subject to the terms of the Microsoft license 
+    agreement under which you licensed this sample source code and is provided AS-IS.
+    If you did not accept the terms of the license agreement, you are not authorized 
+    to use this sample source code.  For the terms of the license, please see the 
+    license agreement between you and Microsoft.
+    
+    To see all Code Samples for Windows Phone, visit http://go.microsoft.com/fwlink/?LinkID=219604
+-->
+<phone:PhoneApplicationPage 
+    x:Class="sdkLocalDatabaseCS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:my="clr-namespace:sdkLocalDatabaseCS"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="ToDoListBoxItemTemplate">
+
+            <Grid HorizontalAlignment="Stretch" Width="350">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+
+                <Image 
+                    
+                    Source="{Binding Path=ItemName,Converter={StaticResource ImageConvert}}" 
+                     Width="300"
+                     Height="300"
+                    Grid.Column="0"></Image>
+
+            </Grid>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
+
+
+
+    <!--LayoutRoot is the root grid where all page content is placed.-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--ContentPanel - place additional content here.-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <StackPanel Background="White"> 
+            <controls:Pivot Margin="0, 0, 0, 0">
+
+                <controls:PivotItem x:Name="PanoControl" Header="" Margin="0,0,0,0">
+                    
+                    <StackPanel>
+                        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="0,0,0,0" >
+                            <Image Height="120" Width="480" Source="/Images/Title.png" Stretch="Fill"/>
+                        </StackPanel>
+                        
+                        <Button x:Name="singleMan" Content="" Width="200" Height="200"  Margin="-40,100,0,0" Click="singleBoy_Click" >
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/nan.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                            <Button x:Name="singleWoman" Content="" Width="200" Height="200"   Margin="-40,0,0,403" Click="singleWoman_Click"  >
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/nv.png" Stretch="Fill"/>
+                                </Button.Background>
+                            </Button>
+                        </StackPanel>
+                </controls:PivotItem>
+
+                <controls:PivotItem Header="">
+                        <Grid>
+                            <Grid.Resources>
+                                <Style x:Key="horizontalListBoxStyle" TargetType="ListBox">
+                                    <Setter Property="ItemsPanel">
+                                        <Setter.Value>
+                                            <ItemsPanelTemplate>
+                                                <StackPanel Orientation="Horizontal"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+                                            </ItemsPanelTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Grid.Resources>
+                            <StackPanel x:Name="HistoryTitlePanel" Grid.Row="0" Margin="0,0,0,0" >
+                                <Image Height="120" Width="480" Source="/Images/hiastorytitle.png" Stretch="Fill"/>
+                            </StackPanel>
+                            <ListBox 
+                        x:Name="homeToDoItemsListBox" 
+                        HorizontalContentAlignment="Left" 
+                        ScrollViewer.HorizontalScrollBarVisibility="Auto"  
+                        Style="{StaticResource horizontalListBoxStyle}"
+                        ItemsSource="{Binding HomeToDoItems}" 
+                        Margin="50, -100, 12, 0" Width="420" 
+                        ItemTemplate="{StaticResource ToDoListBoxItemTemplate}" />
+                        </Grid>
+                    </controls:PivotItem>
+
+                <!--<controls:PivotItem Header="work">
+                    <ListBox 
+                        x:Name="workToDoItemsListBox" 
+                        ItemsSource="{Binding WorkToDoItems}" 
+                        Margin="12, 0, 12, 0" Width="440" 
+                        ItemTemplate="{StaticResource ToDoListBoxItemTemplate}" />
+                </controls:PivotItem>
+
+                <controls:PivotItem Header="hobbies">
+                    <ListBox
+                        x:Name="hobbiesToDoItemsListBox" 
+                        ItemsSource="{Binding HobbiesToDoItems}" 
+                        Margin="12, 0, 12, 0" Width="440" 
+                        ItemTemplate="{StaticResource ToDoListBoxItemTemplate}" />
+                </controls:PivotItem>-->
+
+            </controls:Pivot>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+
+            <shell:ApplicationBarIconButton 
+                IconUri="/Images/appbar.add.rest.png" 
+                Text="add" 
+                x:Name="newTaskAppBarButton" 
+                Click="newTaskAppBarButton_Click"/>
+
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

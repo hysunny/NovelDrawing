@@ -1,0 +1,63 @@
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\ApplicationIcon.png
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Background.png
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Images\appbar.add.rest.png
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Images\appbar.cancel.rest.png
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Images\appbar.check.rest.png
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Images\appbar.delete.rest.png
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Library\Microsoft.Phone.Controls.Toolkit.dll
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\sdkLocalDatabaseCS.dll
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\sdkLocalDatabaseCS.pdb
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\AppManifest.xaml
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Properties\WMAppManifest.xml
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\sdkLocalDatabaseCS_Debug_AnyCPU.xap
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Microsoft.Phone.Controls.dll
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.csprojResolveAssemblyReference.cache
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\App.g.cs
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\MainPage.g.cs
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\NewTaskPage.g.cs
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.g.resources
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.dll
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.pdb
+F:\代码\范例\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\XapCacheFile.xml
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\ApplicationIcon.png
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Background.png
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Images\appbar.add.rest.png
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Images\appbar.cancel.rest.png
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Images\appbar.check.rest.png
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Images\appbar.delete.rest.png
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Library\Microsoft.Phone.Controls.Toolkit.dll
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\sdkLocalDatabaseCS.dll
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\sdkLocalDatabaseCS.pdb
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\AppManifest.xaml
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Properties\WMAppManifest.xml
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\sdkLocalDatabaseCS_Debug_AnyCPU.xap
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Microsoft.Phone.Controls.dll
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.csprojResolveAssemblyReference.cache
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\App.g.cs
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\MainPage.g.cs
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\NewTaskPage.g.cs
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.g.resources
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.dll
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.pdb
+F:\代码\范例\over\Local Database Sample\C#\sdkLocalDatabaseCS\obj\Debug\XapCacheFile.xml
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.csprojResolveAssemblyReference.cache
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\obj\Debug\App.g.cs
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\obj\Debug\MainPage.g.cs
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\obj\Debug\Drawing.g.cs
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.g.resources
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.dll
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\Bin\Debug\ApplicationIcon.png
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\Bin\Debug\Background.png
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\Bin\Debug\Library\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\Bin\Debug\sdkLocalDatabaseCS.dll
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\Bin\Debug\sdkLocalDatabaseCS.pdb
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\obj\Debug\sdkLocalDatabaseCS.pdb
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\Bin\Debug\AppManifest.xaml
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\Bin\Debug\sdkLocalDatabaseCS_Debug_AnyCPU.xap
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\obj\Debug\XapCacheFile.xml
+C:\Users\丹\Desktop\C#\sdkLocalDatabaseCS\obj\Debug\DrawingWoman.g.cs

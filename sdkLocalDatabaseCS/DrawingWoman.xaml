@@ -1,0 +1,245 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="sdkLocalDatabaseCS.DrawingWoman"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+   SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title.-->
+        <StackPanel x:Name="Background" Background="White">
+            <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="0,0,0,0" >
+                <Image Height="120" Width="480" Source="/Images/Title.png" Stretch="Fill"/>
+            </StackPanel>
+            <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+                <StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Width="480" Height="330" VerticalAlignment="Top" Background="#FFF7F7F7"  >
+                        <Canvas Name="personcanvas" Grid.Column="1">
+                            <Rectangle Canvas.Top="0" Canvas.Left="0" Width="480" Height="330" Stroke="#FF00ACEE" StrokeThickness="1">
+                                <Rectangle.Fill>
+                                    <ImageBrush x:Name="body" ImageSource="Images/personbackground.png"></ImageBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle Canvas.Top="23" Canvas.Left="120" Width="200" Height="307" RadiusX="10" RadiusY="10">
+                                <Rectangle.Fill>
+                                    <ImageBrush x:Name="personman" ImageSource="Images/PIC_03.png"></ImageBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle Canvas.Top="1" Canvas.Left="71" Width="300" Height="180" RadiusX="10" RadiusY="10">
+                                <Rectangle.Fill>
+                                    <ImageBrush x:Name="personmanhair"></ImageBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle Canvas.Top="20" Canvas.Left="120" Width="200" Height="330" RadiusX="10" RadiusY="10">
+                                <Rectangle.Fill>
+                                    <ImageBrush x:Name="personmanglass"></ImageBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle Canvas.Top="-18" Canvas.Left="85" Width="270" Height="200" RadiusX="10" RadiusY="10">
+                                <Rectangle.Fill>
+                                    <ImageBrush x:Name="personhat" ></ImageBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle Canvas.Top="16" Canvas.Left="120" Width="200" Height="320" RadiusX="10" RadiusY="10">
+                                <Rectangle.Fill>
+                                    <ImageBrush x:Name="personmancloth" ></ImageBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle Canvas.Top="3" Canvas.Left="118" Width="202" Height="330" RadiusX="10" RadiusY="10">
+                                <Rectangle.Fill>
+                                    <ImageBrush x:Name="personmanpants" ></ImageBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle Canvas.Top="0" Canvas.Left="120" Width="200" Height="330" RadiusX="10" RadiusY="10">
+                                <Rectangle.Fill>
+                                    <ImageBrush x:Name="personmanshose" ></ImageBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle Canvas.Top="20" Canvas.Left="120" Width="200" Height="330"  RadiusX="10" RadiusY="10">
+                                <Rectangle.Fill>
+                                    <ImageBrush x:Name="personmustache" ></ImageBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </Canvas>
+                    </StackPanel>
+                    <Grid>
+                        <Grid.Resources>
+                            <Style x:Key="horizontalListBoxStyle" TargetType="ListBox">
+                                <Setter Property="ItemsPanel">
+                                    <Setter.Value>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Horizontal"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+                                        </ItemsPanelTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Grid.Resources>
+                        <ListBox  Name="imglist1"  HorizontalContentAlignment="Left" 
+                ScrollViewer.HorizontalScrollBarVisibility="Auto"  
+                       Style="{StaticResource horizontalListBoxStyle}"  Height="70" BorderThickness="1" Margin="0,0" Foreground="{x:Null}" Background="{x:Null}">
+                            <ListBox.BorderBrush>
+                                <SolidColorBrush Color="#FF00ACEE"/>
+                            </ListBox.BorderBrush>
+
+                            <Button Name="style1" Width="100" Height="94" BorderThickness="1" Margin="-12,-13,0,0" Click="style1_Click">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/hair01_03.png" Stretch="Fill"/>
+                                </Button.Background>
+                                <Button.BorderBrush>
+                                    <SolidColorBrush Color="#FF00ACEE"/>
+                                </Button.BorderBrush>
+                            </Button>
+                            <Button Name="style2" Width="100" Height="94" BorderThickness="1" Margin="-25,-13,0,0" Click="style2_Click"  >
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/hair02_03.png" Stretch="Fill"/>
+                                </Button.Background>
+                                <Button.BorderBrush>
+                                    <SolidColorBrush Color="#FF00ACEE"/>
+                                </Button.BorderBrush>
+                            </Button>
+
+                            <Button Name="style3" Width="100" Height="94" BorderThickness="1" Margin="-25,-13,0,0" Click="style3_Click"  >
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/hair03_03.png" Stretch="Fill"/>
+                                </Button.Background>
+                                <Button.BorderBrush>
+                                    <SolidColorBrush Color="#FF00ACEE"/>
+                                </Button.BorderBrush>
+                            </Button>
+
+                            <Button Name="style4" Width="100" Height="94" BorderThickness="1" Margin="-25,-13,0,0" Click="style4_Click">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/hair04_03.png" Stretch="Fill"/>
+                                </Button.Background>
+                                <Button.BorderBrush>
+                                    <SolidColorBrush Color="#FF00ACEE"/>
+                                </Button.BorderBrush>
+                            </Button>
+
+                            <Button Name="style5" Width="100" Height="94" BorderThickness="1" Margin="-25,-13,0,0" Click="style5_Click">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/hair05_03.png" Stretch="Fill"/>
+                                </Button.Background>
+                                <Button.BorderBrush>
+                                    <SolidColorBrush Color="#FF00ACEE"/>
+                                </Button.BorderBrush>
+                            </Button>
+
+                            <Button Name="style6" Width="100" Height="94" BorderThickness="1" Margin="-25,-13,0,0" Click="style6_Click">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/1-4.jpg" Stretch="Fill"/>
+                                </Button.Background>
+                                <Button.BorderBrush>
+                                    <SolidColorBrush Color="#FF00ACEE"/>
+                                </Button.BorderBrush>
+                            </Button>
+
+                            <Button Name="style7" Width="100" Height="94" BorderThickness="1" Margin="-26,-13,0,0" Click="style7_Click" >
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/1-5.jpg" Stretch="Fill"/>
+                                </Button.Background>
+                                <Button.BorderBrush>
+                                    <SolidColorBrush Color="#FF00ACEE"/>
+                                </Button.BorderBrush>
+                            </Button>
+
+                            <Button Name="style8" Width="100" Height="94" BorderThickness="1" Margin="-26,-13,0,0">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/1-1.jpg" Stretch="Fill"/>
+                                </Button.Background>
+                                <Button.BorderBrush>
+                                    <SolidColorBrush Color="#FF00ACEE"/>
+                                </Button.BorderBrush>
+                            </Button>
+
+                            <Button Name="style9" Width="100" Height="94" BorderThickness="1" Margin="-26,-13,0,0" Visibility="Collapsed">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/1-2.jpg" Stretch="Fill"/>
+                                </Button.Background>
+                                <Button.BorderBrush>
+                                    <SolidColorBrush Color="#FF00ACEE"/>
+                                </Button.BorderBrush>
+                            </Button>
+                        </ListBox>
+                    </Grid>
+                    <StackPanel Height="230" Width="440" Background="White" Margin="30,0,0,0">
+                        <Button x:Name="per" Content="" Width="100" HorizontalAlignment="Left" Height="92"  Margin="0,0,0,0" Click="per_Click" >
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/win_14.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="hat" Content="" Width="100" Height="92" HorizontalAlignment="left"  Margin="100,-92,30,10" Click="hat_Click" >
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/win_05.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="glass" Content="" Width="100" HorizontalAlignment="Left" Height="92"  Margin="0,-10,0,0" Click="glass_Click" >
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/win_12.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="bear" Content="" Width="100" Height="92" HorizontalAlignment="left"  Margin="100,-92,30,10" Click="bear_Click" >
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/win_13.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="cloth" Content="" Width="100" HorizontalAlignment="Left" Height="92"  Margin="200,-296,0,0" Click="cloth_Click" >
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/win_07.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="love" Content="" Width="100" Height="92" HorizontalAlignment="left"  Margin="300,-287,30,10" Click="love_Click" >
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/win1_03.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="more" Content="" Width="100" Height="92" HorizontalAlignment="left"  Margin="200,-113,0,0" Click="more_Click" >
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/pant00_03.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="hairstyle" Content="" Width="100" HorizontalAlignment="Left" Height="92"  Margin="300,-113,0,0" Click="hairstyle_Click" >
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/win_03.png" Stretch="Fill"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                    <toolkit:ListPicker
+                x:Name="categoriesListPicker"
+                ItemsSource="{Binding CategoriesList}"
+                DisplayMemberPath="Name">
+                    </toolkit:ListPicker>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+
+            <shell:ApplicationBarIconButton 
+                x:Name="appBarOkButton" 
+                IconUri="/Images/save.png" 
+                Text="ok" 
+                Click="appBarOkButton_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+
+</phone:PhoneApplicationPage>
